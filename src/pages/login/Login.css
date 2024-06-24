@@ -1,0 +1,97 @@
+/*login*/
+
+.login-container{
+   margin: auto auto;
+    box-shadow: 10px 10px 10px 10px grey;
+    border-radius: 20px;
+    height: 350px;
+    width: 700px;
+    
+    display: flex;
+    
+  
+    @media screen and (width < 779px){
+      flex-direction: column;
+      width: 350px;
+      height: 300px;
+      background-image: url('./assets/sea.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 50%;
+  
+  
+      .img-login-container{
+        display: none;
+      }
+    }
+  
+  }
+  .login-form{
+    
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+    
+    .log-title{
+        color: dodgerblue;
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
+    .input-container{
+        
+        display: flex;
+        flex-direction: column;
+        padding-bottom:1rem;
+        
+        .label{
+            text-transform: uppercase;
+            color: dodgerblue;
+        }
+        .input{
+            border-radius:.5rem;
+            border:grey 2px solid;
+            transition: all .5s ease-in;
+            cursor: pointer;
+            &:hover{
+                border: dodgerblue 2px solid;
+            }
+        }
+    }
+    .input-container.checkContainer{
+        display: flex;
+        flex-direction: row;
+        gap:1rem;
+        position: relative;
+
+        .check{
+            text-transform: uppercase;
+            color: dodgerblue;
+        }
+        .input{
+            position: absolute;
+            left:105px;
+            top:.4rem;
+            padding: 3px;
+            
+        }
+    }
+  
+    
+    
+  }
+  .img-login-container{
+    flex:1;
+    width: 250px;
+    height: 100%;
+    
+    
+    .login-img{
+      width: 350px;
+      height: 100%;
+      object-fit: cover;
+      border-top-right-radius: 20px;
+    border-bottom-right-radius:20px;
+  
+    }
+  }

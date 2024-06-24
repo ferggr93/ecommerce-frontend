@@ -1,0 +1,96 @@
+.consoles-container{
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom:100px;
+
+    @media screen and (width < 778px){
+        flex-direction: column;
+        align-items: center;
+
+        .console{
+            
+            margin-bottom: 1rem;
+            
+        }
+    }
+    
+    
+
+    .console{
+        flex: 1;
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all .5 ease-out;
+        width: 250px;
+
+        .values{
+            width: 100%;
+            position: relative;
+            
+
+            .price{
+                position: absolute;
+                bottom:10px;
+                left:10px;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            .ver{
+                position:absolute;
+                bottom:10px;
+                right: 10px;
+            }
+            
+        }
+        
+
+        &:hover{
+            box-shadow: 5px 5px 5px 5px grey;
+            transform: scale(1.05);
+            cursor: pointer;
+            .console-name, .console-description, .values{
+                display: block;
+            }
+        }
+
+
+        .console-text{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            
+            align-items: center;
+
+            .console-name{
+                text-transform: uppercase;
+                color: dodgerblue;
+                font-family: "Roboto";
+            }
+
+            .console-description{
+                font-size: 18px;
+                font-family: "Montserrar";
+            }
+            
+        }
+
+        .console-name, .console-description, .values{
+            display: none;
+            
+        }
+        
+
+        .console-img{
+            width:100px;
+            height: 100px;
+            border-radius: 50%;
+            
+        }
+    }
+}

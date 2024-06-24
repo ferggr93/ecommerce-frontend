@@ -1,0 +1,85 @@
+.form-container{
+    margin:50px auto;
+    cursor: pointer;
+    width: 400px;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px 5px grey;
+    
+    .title{
+        text-transform: uppercase;
+        color: dodgerblue;
+        margin-bottom: 20px;
+    }
+    
+
+    .contact-form{
+       display: flex;
+       flex-direction: column;
+
+        .input-container{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: .5rem;
+
+            .label{
+                text-transform: uppercase;
+                color: dodgerblue;
+            }
+
+            input, textarea, select{
+                border-radius: 5px;
+                border: 3px solid grey;
+                &:hover{
+                    border: 3px solid dodgerblue;
+                }
+            }
+
+        }
+    }
+}
+.section-divider{
+    height: 3px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: grey;
+    margin-bottom:50px;
+}
+
+.contact{
+    margin-bottom: 50px;
+    
+    padding: 1rem;
+
+    .title{
+        text-transform: uppercase;
+        color: dodgerblue;
+        text-align: center;
+        
+    }
+    .contact-sections{
+        
+        display: flex;
+
+        .transition{
+            background-color: dodgerblue;
+            border-radius: 5px;
+            width: 5px;
+            
+
+
+        }
+        
+
+        .contact-info, .contact-address-faqs{
+            
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        
+
+    }
+}

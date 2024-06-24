@@ -1,0 +1,50 @@
+/*cards*/
+.card{
+    width:300px;
+    transition: all 0.5s ease-in;
+    display: flex;
+    flex-direction: column;
+    
+    
+    &:hover{
+      transform: scale(1.02);
+      cursor: pointer;
+      box-shadow: 5px 5px 5px grey;
+    }
+  
+      .card-head{
+        
+        
+        .card-img{
+          height: 180px;
+          width: 100%;
+          
+    
+        
+      }
+    }
+    .card-body{
+      flex:1;
+  
+      .title-card{
+        color:dodgerblue;
+        font-weight: bold;
+        text-align: center;
+        font-size: 26px;
+        font-family: "Roboto";
+      }
+      .card-description{
+        display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3; /* Cambia el número 3 por el número de líneas que deseas mostrar */
+            line-height: 1.6;
+        text-align: left;
+        font-size: 18px;
+        font-family: "Monserrat";
+        
+      }
+    }
+  }
+  

@@ -1,0 +1,94 @@
+@import 'bootstrap';
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 5px 5px 5px 5px grey;
+  min-height: 100dvh;
+  background-color: white;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.navbar-nav {
+  position: absolute;
+  right: 10px;
+
+
+  @media screen and (width < 992px) {
+    position: unset;
+    text-align: center;
+
+
+  }
+
+  .nav-item {
+    text-transform: uppercase;
+    font-family: "Monserrat";
+
+    @media screen and (width < 992px) {
+      margin-top: 6px;
+    }
+
+
+    .nav-link {
+      color: antiquewhite;
+      padding: 16px;
+      transition: all .5s ease-in;
+
+
+
+      &:hover {
+        background-color: dodgerblue;
+
+      }
+    }
+  }
+
+}
+
+.navbar-brand {
+  color: antiquewhite;
+}
+
+.navbar-toggler {
+  color: antiquewhite;
+
+}
+
+.navbar-toggler-icon {
+
+  background-color: antiquewhite;
+}
+
+
+
+.title {
+  width: 100%;
+  color: #444;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  padding: .5rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.title::first-letter {
+  color: dodgerblue;
+  text-transform: uppercase;
+}
